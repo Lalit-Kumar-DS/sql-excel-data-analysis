@@ -37,10 +37,11 @@ A complete workflow was built using PostgreSQL for ETL, Excel for dashboards, an
 - GitHub → project hosting
 
 
-## Project Structure
+## 📂 Project Structure
+
 
 sql-excel-data-analysis/
-│
+│                              
 ├── README.md                     # Project documentation
 ├── .gitignore                     # Git ignore rules
 │
