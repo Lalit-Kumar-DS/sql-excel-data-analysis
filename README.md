@@ -17,19 +17,19 @@ Analyzing Apple product pricing, profitability, and sales trends using PostgreSQ
 - [Author & Contact](#author--contact)
 
 
-##Overview
+## Overview
 
 This project evaluates Apple product pricing and sales dynamics to uncover insights into profitability, discounts, and event-driven sales.  
 A complete workflow was built using PostgreSQL for ETL, Excel for dashboards, and visualization screenshots for quick previews.
 
-##Business Problem
+## Business Problem
 **Retailers and analysts need to understand**:
 - How Apple product prices evolve over time
 - Impact of discounts and events on profitability
 - YOY growth trends across categories.
 
 
-##Tools & Technologies
+## Tools & Technologies
 
 - PostgreSQL (pgAdmin) → ETL, queries
 - Excel → PivotTables, charts, dashboard
@@ -37,7 +37,7 @@ A complete workflow was built using PostgreSQL for ETL, Excel for dashboards, an
 - GitHub → project hosting
 
 
-##Project Structure
+## Project Structure
 
 apple-sales-analysis/
 │
@@ -58,7 +58,7 @@ apple-sales-analysis/
 ├── README.md
 
 
-##Data Cleaning & Preparation
+## Data Cleaning & Preparation
 
 - Standardized product categories
 - Converted currency formats
@@ -66,27 +66,27 @@ apple-sales-analysis/
 - Imported CSV into PostgreSQL using `COPY`
 
 
-##Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 - YOY growth in sales
 - Profit margin by product condition
 - Event-based discount analysis
 
 
-##Key Findings
+## Key Findings
 
 - Discounts during events increased sales but reduced margins
 - Certain categories (e.g., iPhones) showed consistent YOY growth
 - Profitability varied significantly by condition (new vs refurbished)
 
 
-##Dashboard
+## Dashboard
 
 [Download Dashboard](dashboard/apple_sales_dashboard.xlsx)
 
 
 
-##How to Run This Project
+## How to Run This Project
 
 1. Import raw CSV into **PostgreSQL**.
 2. Run `create_tables.sql` and `import_and_alter.sql`.
@@ -94,14 +94,14 @@ apple-sales-analysis/
 4. Open `dashboard/apple_sales_dashboard.xlsx` for interactive charts.
 
 
-##Final Recommendations
+## Final Recommendations
 
 - Optimize discount strategies to balance sales volume and margins.
 - Focus on categories with consistent YOY growth.
 - Use dashboards for real-time monitoring.
 
 
-##Author & Contact
+## Author & Contact
 **Lalit Kumar**  
 Aspiring Data Analyst | AI & Data Science Graduate  
 📍 New Delhi, India  
