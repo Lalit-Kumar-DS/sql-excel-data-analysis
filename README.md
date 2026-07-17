@@ -39,23 +39,21 @@ A complete workflow was built using PostgreSQL for ETL, Excel for dashboards, an
 
 ## Project Structure
 
-apple-sales-analysis/
+sql-excel-data-analysis/
 │
 ├── data/
-│   ├── raw_data.csv
-│
+│   └── raw_data.csv
 ├── dashboard/
-│   ├── apple_products_pricing_2020_2026.xlsx
-├── images/
-│   ├── excel_dashboard.JPG
-│
+│   └── apple_products_pricing_2020_2026.xlsx
+├── image/
+│   └── excel_dashboard.JPG
 ├── scripts/
-│   ├── analysis_queries.sql
-│   ├── create_tables.sql
+│   ├── analysis_query.sql
+│   ├── create_table.sql
 │   ├── import_and_alter.sql
-│   ├── project_of_sql.sql
-│
-├── README.md
+│   └── project_of_sql.sql
+└── README.md
+
 
 
 ## Data Cleaning & Preparation
