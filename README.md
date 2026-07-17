@@ -39,8 +39,8 @@ A complete workflow was built using PostgreSQL for ETL, Excel for dashboards, an
 
 ## 📂 Project Structure
 
-```sql-excel-data-analysis/
-│
+sql-excel-data-analysis/
+```
 ├── README.md                                          
 │
 ├── data/                          
