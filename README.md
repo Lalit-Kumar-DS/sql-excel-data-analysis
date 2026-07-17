@@ -12,8 +12,8 @@ Analyzing Apple product pricing, profitability, and sales trends using PostgreSQ
 - [Exploratory Data Analysis (EDA)](#exploratory--data--analysis--eda)
 - [Key Findings](#key--findings)
 - [Dashboard](#dashboard)
-- [How to Run This Project](#how--to--run--this--project)
-- [Final Recommendations](#final--recommendations)
+- [How to Run This Project](#how-to-run-this-project)
+- [Final Recommendations](#final-recommendations)
 - [Author & Contact](#author--contact)
 
 
