@@ -7,13 +7,13 @@ Analyzing Apple product pricing, profitability, and sales trends using PostgreSQ
 - [Overview](#overview)
 - [Business Problem](#business-problem)
 - [Tools & Technologies](#tools--technologies)
-- [Project Structure](#project-structure)
+- [Project Structure](#project--structure)
 - [Data Cleaning & Preparation](#data-cleaning--preparation)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-- [Key Findings](#key-findings)
+- [Exploratory Data Analysis (EDA)](#exploratory--data--analysis--eda)
+- [Key Findings](#key--findings)
 - [Dashboard](#dashboard)
-- [How to Run This Project](#how-to-run-this-project)
-- [Final Recommendations](#final-recommendations)
+- [How to Run This Project](#how--to--run--this--project)
+- [Final Recommendations](#final--recommendations)
 - [Author & Contact](#author--contact)
 
 
@@ -57,7 +57,8 @@ sql-excel-data-analysis/
 │   ├── analysis_query.sql
 │   ├── create_table.sql
 │   ├── import_and_alter.sql
-│   └── project_of_sql.sql```
+│   └── project_of_sql.sql
+```
 
 
 
