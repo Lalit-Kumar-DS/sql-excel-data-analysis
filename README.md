@@ -1,4 +1,4 @@
-#🧾 Apple Sales Analysis (2020–2026)
+# 🧾 Apple Sales Analysis (2020–2026)
 
 Analyzing Apple product pricing, profitability, and sales trends using PostgreSQL, Excel, and dashboards.
 
@@ -82,8 +82,7 @@ apple-sales-analysis/
 
 ## Dashboard
 
-[Download Dashboard](dashboard/apple_sales_dashboard.xlsx)
-
+![Excel Dashboard](image/excel_dashboard.JPG)
 
 
 ## How to Run This Project
