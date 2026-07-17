@@ -17,6 +17,7 @@ Analyzing Apple product pricing, profitability, and sales trends using PostgreSQ
 - [Author & Contact](#author--contact)
 
 
+
 ## Overview
 
 This project evaluates Apple product pricing and sales dynamics to uncover insights into profitability, discounts, and event-driven sales.  
