@@ -39,27 +39,24 @@ A complete workflow was built using PostgreSQL for ETL, Excel for dashboards, an
 
 ## 📂 Project Structure
 
-
-sql-excel-data-analysis/
-│                              
-├── README.md                     # Project documentation
-├── .gitignore                     # Git ignore rules
+```sql-excel-data-analysis/
 │
-├── data/                          # Raw and cleaned datasets
+├── README.md                                          
+│
+├── data/                          
 │   └── raw_data.csv
 │
-├── dashboard/                     # Excel dashboard files
+├── dashboard/                     
 │   └── apple_products_pricing_2020_2026.xlsx
 │
-├── image/                         # Screenshots and visuals
+├── image/                         
 │   └── excel_dashboard.JPG
 │
-├── scripts/                       # SQL scripts for analysis
+├── scripts/                       
 │   ├── analysis_query.sql
 │   ├── create_table.sql
 │   ├── import_and_alter.sql
-│   └── project_of_sql.sql
-
+│   └── project_of_sql.sql```
 
 
 
