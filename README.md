@@ -91,7 +91,7 @@ sql-excel-data-analysis/
 
 ## How to Run This Project
 
-1. Import raw CSV into **PostgreSQL**.
+1. Import raw CSV into PostgreSQL.
 2. Run `create_tables.sql` and `import_and_alter.sql`.
 3. Execute analysis queries (`analysis_queries.sql`).
 4. Open `dashboard/apple_sales_dashboard.xlsx` for interactive charts.
