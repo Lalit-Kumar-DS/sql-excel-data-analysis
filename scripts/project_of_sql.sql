@@ -223,3 +223,15 @@ select conditions, rating_status ,round(count(*) * 100.0 / sum(count(*)) over(pa
 from apple_pricing
 group by conditions, rating_status
 order by conditions, percentage;
+
+-- 2nd highest profit by year
+
+with ran_k as(
+      select years, product_category,
+	  sum (profit) as profit,
+	  rank() over(partition by years order by sum(profit) desc) as ran_kk from apple_pricing
+	  group by years, profit,product_category
+	  ) 
+select * from ran_k
+where ran_kk = 2
+;
