@@ -153,10 +153,10 @@ order by avg_discount desc;
 
 --do higher discounts correlated with higher review_count?
 
-select discount_pct, avg(reviews_count) as avg_review, count(*) as product_count
+select discount_pct, sum(reviews_count) as sum_review, count(*) as product_count
 from apple_pricing 
 group by discount_pct
-order by discount_pct desc
+order by discount_pct desc, sum_review desc
 limit 20;
 
 --we want to know year over year sales trend?
@@ -174,11 +174,25 @@ FROM apple_pricing
 GROUP BY years
 ORDER BY years;
 
---checking by category of product and trend?
+-- not insightfull adding growth rate in percenatage as compare with previous row
+
+SELECT 
+years,
+SUM(current_price_usd) AS total_sales_usd,
+    ROUND(
+        (SUM(current_price_usd) - LAG(SUM(current_price_usd)) OVER (ORDER BY years)) 
+        / LAG(SUM(current_price_usd)) OVER (ORDER BY years) * 100, 2
+    ) AS yoy_growth_percentage
+FROM apple_pricing
+GROUP BY years
+ORDER BY years;
+
+
+--check category of product and trend by year?
 
 select Years as years, product_category, sum(current_price_usd) as total_price_usd from apple_pricing
 group by years, product_category
-order by total_price_usd;
+order by years,total_price_usd desc;
 
 
 -- checking by effect of discount by year
@@ -186,3 +200,26 @@ SELECT years, AVG(discount_pct) AS avg_discount, SUM(current_price_usd) AS total
 FROM apple_pricing
 GROUP BY years
 ORDER BY years;
+
+--what is the average profit percentage per year also by product_category?
+
+select product_category, years, round(avg(profit_per), 2) as avg_profit, sum(profit) as prfit from apple_pricing
+group by product_category,years
+order by years desc, avg_profit desc, prfit desc;
+
+select
+years,
+conditions,
+product_category,
+round(avg(current_price_usd), 2) as avg_total,
+round(avg(profit),2) as avg_profit, round(avg(profit_per),2) as avg_profit_per from apple_pricing
+group by conditions,years,product_category
+order by years desc, avg_profit desc;
+
+
+--condition effect on rating 
+
+select conditions, rating_status ,round(count(*) * 100.0 / sum(count(*)) over(partition by conditions),2 ) as percentage
+from apple_pricing
+group by conditions, rating_status
+order by conditions, percentage;
