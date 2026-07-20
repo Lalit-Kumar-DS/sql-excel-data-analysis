@@ -52,7 +52,7 @@ sql-excel-data-analysis/
 │
 ├── image/                         
 │   └── excel_dashboard.JPG
-│
+│   └── power_bi_dashboard.JPG
 ├── scripts/                       
 │   ├── analysis_query.sql
 │   ├── create_table.sql
@@ -87,6 +87,7 @@ sql-excel-data-analysis/
 ## Dashboard
 
 ![Excel Dashboard](image/excel_dashboard.JPG)
+![Power BI Dashboard](image/power_bi_dashboard.JPG)
 
 
 ## How to Run This Project
