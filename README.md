@@ -24,10 +24,12 @@ This project evaluates Apple product pricing and sales dynamics to uncover insig
 A complete workflow was built using PostgreSQL for ETL, Excel for dashboards, and visualization screenshots for quick previews.
 
 ## Business Problem
+
 **Retailers and analysts need to understand**:
-- How Apple product prices evolve over time
-- Impact of discounts and events on profitability
-- YOY growth trends across categories.
+- How do discounts impact profit margins across product categories?
+- Which discount ranges generate the most customer reviews and ratings?
+- Are Apple products showing consistent year-over-year growth?
+- Do higher discounts reduce product ratings?
 
 
 ## Tools & Technologies
@@ -79,10 +81,10 @@ sql-excel-data-analysis/
 
 ## Key Findings
 
-- Discounts during events increased sales but reduced margins
-- Certain categories (e.g., iPhones) showed consistent YOY growth
-- Profitability varied significantly by condition (new vs refurbished)
-
+- Discounts boost reviews but consistently reduce average profit, especially for iPhones.
+- Reviews spike around 30–40% discounts, showing the sweet spot for engagement.
+- iPhones show consistent YOY growth, while other categories fluctuate depending on event cycles.
+- Ratings remain stable (avg 4.45) even with high discounts, meaning customers don’t   perceive discounted products as lower quality.
 
 ## Dashboard
 
